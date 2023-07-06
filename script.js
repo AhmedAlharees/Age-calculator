@@ -56,7 +56,7 @@ function calculateAge() {
     setTimeout(() => alert('Happy Birthday to you🎂🎉🥳'), 300);
     console.log('Hello');
   }
-  ageStyle(ageYears, ageMonths, ageDays);
+  ageStyle(ageYears, ageMonths, Math.abs(ageDays));
 }
 
 // adding event-listener to the form
