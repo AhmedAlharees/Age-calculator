@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./dist/css/style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+
+<body>
+
+  <!-- main section -->
+  <main class="flex flex-center">
+    <div class="container">
+      <form action="/" id="form">
+        <div class="inputs flex">
+          <div class="input-fields flex flex-column">
+            <label id="day-label" for="day">DAY</label>
+            <input id="day" placeholder="DD">
+            <p class="wrong-input" id="day-error"></p>
+          </div>
+          <div class="input-fields flex flex-column">
+            <label id="month-label" for="month">MONTH</label>
+            <input id="month" placeholder="MM">
+            <p class="wrong-input" id="month-error"></p>
+          </div>
+          <div class="input-fields flex flex-column">
+            <label id="year-label" for="year">YEAR</label>
+            <input id="year" placeholder="YYYY">
+            <p class="wrong-input" id="year-error"></p>
+          </div>
+        </div>
+        <div class="btn">
+          <button type="submit" id="calc-btn">
+            <img src="./assets/images/icon-arrow.svg" alt="">
+          </button>
+        </div>
+      </form>
+      <hr>
+      <div class="flex flex-column flex-gap">
+        <div class="hd-style"><span class="clr-primary" id="year-count">--</span> years</div>
+        <div class="hd-style"><span class="clr-primary" id="month-count">--</span> months</div>
+        <div class="hd-style"><span class="clr-primary" id="day-count">--</span> days</div>
+      </div>
+    </div>
+  </main>
+
+ <script src="script.js"></script>
+</body>
+
+</html>
